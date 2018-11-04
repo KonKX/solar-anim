@@ -1,22 +1,19 @@
-KΩΝΣΤΑΝΤΙΝΟΣ ΚΑΚΑΝΗΣ-ΧΡΥΣΟΒΕΡΓΗΣ 1115201000061
+This is an interactive animation of the sun and a rotating planet with a satellite. 
 
-ΕΡΓΑΣΙΑ ΓΡΑΦΙΚΑ 1
+Implemented in Visual Studio 13. 
 
-Η εργασία υλοποιήθηκε στο Visual Studio 13 και σε περιβάλλον Windows 7. Έχει κατασκευαστεί ένα αλληλεπιδραστικό animation ήλιου και περιστρεφόμενου πλανήτη
-με δορυφόρο. Η εργασία δεν είναι ολοκληρωμένη (κυρίως παραλήφθηκαν το κομμάτι της ακτινοβολίας και τα αστέρια).
+Usage: The "a" and "d" buttons rotate the camera along the X-axis while using the "w" and "x" on the Y axis.
+Pressing the "r" button pauses the animation and when pressed again it restarts. Exit with "q".
 
-Περιλαμβάνονται 2 αρχεία πηγαίου κώδικα (Solar.cpp, Main.cpp) και ένα αρχείο επικεφαλίδας (Solar.h).
+Solar.cpp: Hour, Day, and Increment variables are initialized and manipulate the position and speed of animation.
+The KeyFunc function consists of a switch that controls the push of a button.
+Idle is the main function of the program that designs and renders the animation. This is where the objects are made
+and their position and behavior are determined.
 
-Χρήση: Με τα πλήκτρα "a" και "d" γίνεται περιστροφή της κάμερας κατά τον άξονα Χ ενώ με τα "w" και "x" κατά τον Υ άξονα.
-Με το πάτημα του πλήκτρου "r" γίνεται παύση του animation και αν το ξαναπατήσουμε γίνεται επανέναρξη. Με το q τερματίζει.
+OpenGLInit has to do with OpenGL rendering modes.
 
-Solar.cpp: Οι μεταβλητές Hour, Day και Increment αρχικοποιούνται και χειρίζονται την θέση και την ταχύτητα του animation.
-Η συνάρτηση KeyFunc αποτελείται από ένα switch το οποίο ελέγχει το πάτημα ενός κουμπιού.
-Η Idle είναι η κύρια συνάρτηση του προγράμματος η οποία σχεδιάζει και κάνει render τo animation. Σε αυτήν κατασκεύαζονται τα αντικείμενα
-και προσδιορίζεται η θέση και η συμπεριφορά τους.
-Η OpenGLInit έχει να κάνει με τα rendering modes της OpenGL.
-Η ResizeWindow καλείται όταν αλλάζει μέγεθος το παράθυρό μας.
+ResizeWindow is called when resizing our window.
 
-Main.cpp: Η συνάρτηση main κάνει set up την OpenGl, καλεί τις κατάλληλες συναρτήσεις και ξεκινάει το main loop.
+Main.cpp: The main function sets up OpenGl, calls the appropriate functions and starts the main loop.
 
-Solar.h: Εδώ βρίσκονται οι δηλώσεις των συναρτήσεων.
+Solar.h: Includes function statements.
